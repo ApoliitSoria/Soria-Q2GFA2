@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(Media/IMAGES/low-angle-shot-mesmerizing-starry-sky.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+main h1{
+    color: white;
+    position: static;
+    text-align: center;
+    margin-top: 20vh;
+    text-shadow: 5px 5px black;
+}
+
+.heavenlybody{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+.heavenlybody2{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+#BadGuy{
+    background-image: url(Media/Gif/sunny.gif);
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    transform: translate(-245px, 0px);
+}
+
+#Earthling{
+    background-image: url(Media/Gif/Miary.gif);
+    width: 256px;
+    height: 256px;
+    animation: Earthmotion 60s linear infinite;
+}
+
+@keyframes Earthmotion {
+    0%{transform: translate(-400px, 0px);}
+    50% {transform: translate(2400px, 400px);}
+    100% {transform: translate(-2400px, -400px); z-index: 91;}
+}
+
+#Ex{
+    background-image: url(Media/Gif/giphy.gif);
+    width: 128px;
+    height: 128px;
+    animation: Exmotion 10s linear infinite;
+}
+
+@keyframes Exmotion {
+    0%{transform: translate(-2400px, 400px); z-index: 89;}
+    50% {transform: translate(2400px, -800px);}
+    100% {transform: translate(-2400px, 400px); z-index: 93;}
+}
+
+#Watermelon{
+    background-image: url(Media/Gif/RIMY.gif);
+    width: 256px;
+    height: 256px;
+    animation: Melonmotion 300s infinite;
+}
+
+@keyframes Melonmotion {
+    0%{transform: scale(0.01); z-index: 88;}
+    100% {transform: scale(1); z-index: 88;}
+}
+
+#Exo{
+    background-image: url(Media/Gif/worldly.gif);
+    width: 128px;
+    height: 128px;
+    animation: Exomotion 12s infinite;
+}
+
+@keyframes Exomotion {
+
+    0%{transform: translate(0px, 0px) rotate(0deg)}
+    50%{transform: translate(500px, 180px) rotate(360deg) skew(25deg);}
+    100%{z-index: 91;}
+}
